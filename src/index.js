@@ -1,3 +1,5 @@
 import './styles.css';
-import { loader } from './loader.js';
+import loader from './homeLoader.js';
+import menuLoader from './menuLoader.js';
+
 loader();
