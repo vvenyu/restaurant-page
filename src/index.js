@@ -1,1 +1,3 @@
-import loader from './loader.js';
+import './styles.css';
+import { loader } from './loader.js';
+loader();
