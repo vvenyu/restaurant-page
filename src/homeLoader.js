@@ -1,7 +1,8 @@
 import catImage from './cat.jpg'
-
+import './home.css';
 export default () => {
   const content = document.querySelector('#content');
+  content.className = 'home-page';
   const headline = document.createElement('h1');
   const image = document.createElement('img');
   const description = document.createElement('p');

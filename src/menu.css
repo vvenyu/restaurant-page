@@ -1,0 +1,78 @@
+.menu-page {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+#content>h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.2rem;
+  color: var(--third-color);
+  letter-spacing: 0.04em;
+}
+
+.menu-item {
+  background: linear-gradient(145deg,
+      var(--second-color) 0%,
+      #ecdcb4 100%);
+  padding: 1.6rem 1.4rem;
+  border-radius: 14px;
+  border: 2px solid var(--third-color);
+  box-shadow:
+    0 4px 12px rgba(126, 84, 0, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 24px rgba(126, 84, 0, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item .item-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  color: var(--third-color);
+  letter-spacing: 0.02em;
+}
+
+.menu-item hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right,
+      var(--third-color),
+      var(--main-color),
+      transparent);
+  margin: 0.2rem 0;
+}
+
+.menu-item .item-desc {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #5a4416;
+  flex: 1;
+}
+
+.menu-item .item-price {
+  display: inline-block;
+  align-self: flex-end;
+  margin-top: 0.6rem;
+  background-color: var(--third-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
